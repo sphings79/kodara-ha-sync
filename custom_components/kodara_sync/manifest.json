@@ -1,0 +1,14 @@
+{
+  "domain": "kodara_sync",
+  "name": "Kodara Sync",
+  "codeowners": ["@sphings79"],
+  "config_flow": true,
+  "dependencies": ["http", "webhook", "frontend", "panel_custom", "websocket_api"],
+  "documentation": "https://github.com/sphings79/kodara-ha-sync",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/sphings79/kodara-ha-sync/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}

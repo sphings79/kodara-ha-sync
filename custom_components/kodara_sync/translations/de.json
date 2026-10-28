@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kodara Sync",
+        "description": "Das richtet einen privaten Sync-Ordner für die App Kodara Home ein und, wenn du es in der App einschaltest, eine Ansicht deiner Geräte und Kopplungscodes in Home Assistant. Die App verschlüsselt alles, was sie hier ablegt; Home Assistant kann es nicht lesen."
+      },
+      "address": {
+        "title": "Adresse für die App",
+        "description": "Trage diese Adresse in der App Kodara Home ein (Daten → Synchronisierung → Home Assistant). Behandle sie wie ein Passwort: Wer sie hat, kann die verschlüsselten Dateien lesen und löschen.\n\n`{address}`"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Kodara Sync ist bereits eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kodara Sync",
+        "description": "Adresse für die App (bitte geheim halten):\n\n`{address}`",
+        "data": {
+          "warranty_days": "So viele Tage vor Garantieende warnen",
+          "quota_mb": "Speichergrenze (MB)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "warranty_until": { "name": "Garantie bis" },
+      "home_devices": { "name": "Geräte" }
+    },
+    "binary_sensor": {
+      "warranty_expiring": { "name": "Garantie läuft bald ab" }
+    }
+  }
+}

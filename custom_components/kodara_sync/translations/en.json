@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kodara Sync",
+        "description": "This sets up a private sync folder for the Kodara Home app and, if you choose, a view of your devices and pairing codes in Home Assistant. The app encrypts everything it stores here; Home Assistant cannot read it."
+      },
+      "address": {
+        "title": "Address for the app",
+        "description": "Type this address into the Kodara Home app (Data → Sync → Home Assistant). Treat it like a password: whoever has it can read and delete the encrypted files.\n\n`{address}`"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Kodara Sync is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kodara Sync",
+        "description": "Address for the app (keep it private):\n\n`{address}`",
+        "data": {
+          "warranty_days": "Warn this many days before a warranty ends",
+          "quota_mb": "Storage limit (MB)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "warranty_until": { "name": "Warranty until" },
+      "home_devices": { "name": "Devices" }
+    },
+    "binary_sensor": {
+      "warranty_expiring": { "name": "Warranty ends soon" }
+    }
+  }
+}
