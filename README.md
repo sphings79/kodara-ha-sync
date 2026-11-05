@@ -18,6 +18,18 @@ history). They are only returned to administrators in the panel.
 
 ## Install
 
+### Marketplace (Home Assistant 2026.11 and newer)
+
+Home Assistant 2026.11 replaces HACS with the built-in **Marketplace**. Kodara Sync is not in the default catalog, so add it as a custom repository: in **Settings → Marketplace**, add `https://github.com/sphings79/kodara-ha-sync` (category **Integration**), then install it from there. Custom repositories need the Marketplace to be connected to GitHub, and it asks you to connect the first time.
+
+You can also use this button:
+
+[![Open your Home Assistant instance and open this repository in the Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=sphings79&repository=kodara-ha-sync&category=integration)
+
+Restart Home Assistant if a repair asks you to.
+
+### HACS (Home Assistant 2026.10 and older)
+
 HACS → Custom repositories → add this repository as *Integration*, install, restart
 Home Assistant, then *Settings → Devices & services → Add integration → Kodara Sync*.
 The setup shows an address; type it into the app under *Data → Sync → Home Assistant*.
