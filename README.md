@@ -26,7 +26,9 @@ You can also use this button:
 
 [![Open your Home Assistant instance and open this repository in the Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=sphings79&repository=kodara-ha-sync&category=integration)
 
-Restart Home Assistant if a repair asks you to.
+Restart Home Assistant if a repair asks you to. Then go to *Settings → Devices & services → Add integration → Kodara Sync*.
+The setup shows an address; type it into the app under *Data → Sync → Home Assistant*.
+Treat the address like a password.
 
 ### HACS (Home Assistant 2026.10 and older)
 
